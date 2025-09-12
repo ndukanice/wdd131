@@ -1,3 +1,6 @@
+/* Google Fonts Preconnect and Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* General styles */
 body {
     font-family: 'Montserrat', Arial, sans-serif;
@@ -111,7 +114,7 @@ main {
 }
 
 .profile {
-    max-width: 180px;
+    max-width: 220px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(40,82,122,0.12);
 }
@@ -136,14 +139,25 @@ main {
 }
 
 .city-flex figcaption {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-style: italic;
     text-align: center;
     color: #666;
+    margin-top: 0.5rem;
 }
 
 .card hr {
     margin: 1.5rem 0;
+}
+
+.about-details h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
 }
 
 /* Footer styles */
@@ -190,4 +204,5 @@ footer p {
     }
     .profile {
         margin: 0 auto 1rem auto;
-        max-width: 150px; 
+        max-width: 150px;
+    }
