@@ -12,17 +12,17 @@ header {
     padding-bottom: 0;
 }
 
-.header-top {
-    padding: 1rem 0;
+h1 {
     text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 1.2rem 0 0.5rem 0;
 }
 
-.header-top h1 {
-    margin: 0;
-    font-size: 1.5rem;
+.highlight {
+    color: #ffd600;
+    font-weight: 700;
 }
 
 nav {
@@ -73,14 +73,6 @@ main {
     font-size: 1.3rem;
 }
 
-.card img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 180px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(40,82,122,0.12);
-}
-
 .card ul {
     margin-top: 1rem;
     padding-left: 1.2rem;
@@ -100,6 +92,60 @@ main {
     color: #ffd600;
 }
 
+/* About Me Card Specifics */
+.about-flex {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-details {
+    flex: 2;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile {
+    max-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(40,82,122,0.12);
+}
+
+.city-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.city-flex figure {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.flag {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.city-flex figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+    color: #666;
+}
+
+.card hr {
+    margin: 1.5rem 0;
+}
+
 /* Footer styles */
 footer {
     background: #28527a;
@@ -112,6 +158,11 @@ footer {
 
 footer p {
     margin: 0.3rem 0;
+}
+
+.footer-icon {
+    color: #ffd600;
+    font-size: 1.1em;
 }
 
 #lastModified {
@@ -128,4 +179,15 @@ footer p {
     .card {
         margin-bottom: 2rem;
     }
-}
+    .about-flex,
+    .city-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .about-image {
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+    .profile {
+        margin: 0 auto 1rem auto;
+        max-width: 150px; 
