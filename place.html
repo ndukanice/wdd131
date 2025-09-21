@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <meta name="description" content="A page about Nigeria">
+    <meta name="author" content="Emmanuel Nduka Eze">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/abuja.jpg" media="(min-width: 800px)">
+            <img src="images/abuja.jpg" alt="Abuja City Gate">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 923,768 sq km</p>
+            <p><strong>Population:</strong> 230,842,743</p>
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Languages:</strong> English, Hausa, Igbo, Yoruba</p>
+            <p><strong>Currency:</strong> Nigerian Naira (NGN)</p>
+            <p><strong>Time Zone:</strong> West Africa Time (UTC+1)</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zM12 4a.8.8 0 0 0-.8.8V8a.8.8 0 0 0 1.6 0V4.8A.8.8 0 0 0 12 4zm0 14a.8.8 0 0 0 .8-.8V14a.8.8 0 0 0-1.6 0v3.2a.8.8 0 0 0 .8.8zm6.2-12.2a.8.8 0 0 0-1.1 0l-2.2 2.2a.8.8 0 1 0 1.1 1.1l2.2-2.2a.8.8 0 0 0 0-1.1zM7.9 16.1a.8.8 0 0 0-1.1 0L4.6 18.3a.8.8 0 1 0 1.1 1.1l2.2-2.2a.8.8 0 0 0 0-1.1zM20 12a.8.8 0 0 0-.8-.8h-3.2a.8.8 0 0 0 0 1.6h3.2a.8.8 0 0 0 .8-.8zM8 12a.8.8 0 0 0-.8-.8H4a.8.8 0 0 0 0 1.6h3.2A.8.8 0 0 0 8 12zm10.3-6.2a.8.8 0 0 0-1.1-1.1l-2.2 2.2a.8.8 0 0 0 1.1 1.1l2.2-2.2zM5.7 7.9a.8.8 0 0 0-1.1-1.1L2.4 9a.8.8 0 1 0 1.1 1.1l2.2-2.2z"/></svg>
+            </div>
+            <p><strong>Temperature:</strong> <span id="temperature"></span> &deg;C</p>
+            <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="current-year"></span> Emmanuel Nduka Eze | Last Updated: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

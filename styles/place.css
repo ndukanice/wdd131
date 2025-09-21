@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #008751;
+    --secondary-color: #FFFFFF;
+    --text-color: #333;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.data, .weather {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-icon {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}

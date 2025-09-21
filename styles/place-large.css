@@ -1,0 +1,16 @@
+@media (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .weather .weather-icon svg {
+        display: none;
+    }
+
+    .weather .weather-icon::after {
+        content: '☀️';
+        font-size: 48px;
+    }
+}
