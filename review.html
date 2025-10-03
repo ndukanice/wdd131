@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted - WDD 131</title>
+    <meta name="description" content="Product review submission confirmation">
+    <meta name="author" content="Emmanuel Nduka Eze">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Thank You!</h1>
+        <p>Your product review has been submitted successfully</p>
+    </header>
+
+    <main>
+        <div class="confirmation-container">
+            <div class="success-message">
+                <div class="success-icon">✓</div>
+                <h2>Review Submitted Successfully</h2>
+                <p>Thank you for taking the time to share your experience with our product.</p>
+            </div>
+
+            <div class="review-summary">
+                <h3>Review Summary</h3>
+                <div id="review-details">
+                    <!-- Review details will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="review-counter">
+                <h3>Your Review Activity</h3>
+                <p>You have completed <span id="review-count">0</span> product review(s).</p>
+                <p class="counter-note">This counter is stored locally on your device.</p>
+            </div>
+
+            <div class="action-buttons">
+                <a href="form.html" class="btn btn-primary">Submit Another Review</a>
+                <a href="index.html" class="btn btn-secondary">Return to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2025 🌸 Emmanuel Nduka Eze 🌸 Nigeria</p>
+        <p id="last-modified">Last Modification: <span id="last-modified-date"></span></p>
+    </footer>
+</body>
+</html>
